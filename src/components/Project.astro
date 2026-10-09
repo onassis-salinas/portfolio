@@ -2,7 +2,6 @@
 interface Props {
   title: string;
   href: string;
-  img?: string;
   text: string;
 }
 
@@ -11,10 +10,7 @@ const { title, href, text } = Astro.props;
 
 <div class="grid gap-4">
   <div class="flex flex-col h-full">
-    <a
-      href={href}
-      class="font-medium tracking-tight text-title hover:underline"
-    >
+    <a href={href} class="font-medium text-title hover:underline">
       {title}
     </a>
     <div class="flex flex-col gap-2">

@@ -8,9 +8,10 @@ interface Props {
 const { text, id, count } = Astro.props;
 ---
 
-<h2 id={id} class="mb-2 text-sm border-b pb-1 flex justify-between items-center">
+<h2
+  id={id}
+  class="mb-2 text-sm border-b pb-1 flex justify-between items-center"
+>
   <span>{text}</span>
-  {count !== undefined && (
-    <span class="text-sm text-gray-500">({count})</span>
-  )}
+  {count !== undefined && <span class="text-gray-500">({count})</span>}
 </h2>

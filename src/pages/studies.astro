@@ -1,0 +1,116 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Study from "../components/Study.astro";
+
+// TO-WRITE:
+// Nothing for now
+---
+
+<Layout title="Studies" locale="en">
+    <section class="mt-20">
+        <h1>Studies</h1>
+        <p>
+            This is a record of my studies. I can't document every single
+            project or course I have done, but I will keep the most important.
+            The dates are completion dates, but most of them started months or
+            years earlier.
+        </p>
+    </section>
+
+    <section class="space-y-8">
+        <Study title="Capucare" type="Project" date="2026-10-08">
+            My second shipped platform, a non-profit for animal shelters. It's
+            very similar to Capupet on the technical and design side. However,
+            it brought a lot of challenges in the business logic.
+        </Study>
+
+        <Study title="Capupet" type="Project" date="2026-10-03">
+            This is the first real SaaS I shipped. I learned a lot about code
+            quality, performance and how to write reliable software in general.
+            I also learned a lot about the business side and UI/UX design.
+        </Study>
+
+        <Study title="Factory ERP" type="Project" date="2026-07-22">
+            This was my main project at my first full-time job. I spent a couple
+            of years working on an ERP that could manage all the factory
+            processes. I learned a lot about how a factory works. I also learned
+            a TON about advanced SQL and data modeling.
+        </Study>
+
+        <Study title="Churchpaq" type="Project" date="2026-06-01">
+            This was my first try at building a real SaaS. I learned a lot about
+            fullstack development, design, mobile development, scaling,
+            performance, and much more. However, I ended up ditching it.
+        </Study>
+
+        <Study title="System Design Interview" type="Book" date="2026-04-20">
+            It's an amazing book by ByteByteGo. It showed me the basics of
+            distributed systems and how to design for scale.
+        </Study>
+
+        <Study title="Geometry Bullets" type="Project" date="2026-03-24">
+            I decided to remake my 2D shooter, this time in JS. I used 0
+            dependencies. The whole game is running in an HTML canvas. Physics,
+            collisions, movement, and rendering were all coded from scratch.
+        </Study>
+
+        <Study title="The Pragmatic Programmer" type="Book" date="2026-03-19">
+            This was my first coding book. Since I'm more of a practical
+            learner, it's more about how to be a good craftsman than about
+            coding concepts. I'd rate it 10/10 and recommend it to any
+            programmer.
+        </Study>
+
+        <Study title="IT Management" type="Project" date="2025-02-01">
+            My first full-time job was at 16, in a medium-sized factory in
+            Tijuana. I was the IT admin of the company. I learned a lot in this
+            job, and had a real challenge. Previous IT managers didn't do a nice
+            job, so it took me around a year to fix and standardize everything.
+        </Study>
+
+        <Study title="Custom websites" type="Project" date="2023-09-22">
+            My first real job as a programmer was as a freelancer making custom
+            websites for coffee shops and photographers. I did a lot of practice
+            and designs. However, I only got 1 client.
+        </Study>
+
+        <Study
+            title="National math contest (Cecyte)"
+            type="Contest"
+            date="2022-05-30"
+        >
+            In my first year of high school, a teacher said a math contest was
+            worth an extra point. I entered, won the state round, and flew to
+            Durango for nationals, where I placed third. I barely studied. That
+            made me realize my own potential and made me wonder what I could
+            achieve if I really studied. I later left high school so I could
+            spend the time studying programming by myself.
+        </Study>
+
+        <Study
+            title="Geometry and bullets (Unity)"
+            type="Project"
+            date="2022-02-14"
+        >
+            I decided I was ready for real code. I was learning geometry and
+            trigonometry. I opened Unity and made a full 2D shooter, which was
+            actually pretty fun. However, instead of using the physics engine, I
+            developed every movement andtrajectory using my own math.
+        </Study>
+
+        <Study title="Raycast in Scratch" type="Project" date="2020-06-01">
+            I wanted a challenge in Scratch. I was curious about making 3D
+            games. I tried some techniques, but my favourite was Doom's raycast.
+            I learned the fundamentals and created a 3D maze. This would be my
+            "final test" in Scratch.
+        </Study>
+
+        <Study title="Scratch projects" type="Project" date="2019-02-14">
+            My first approach to programming was in Scratch. My teacher in 6th
+            grade showed us the tool and how to move our character around the
+            screen. However, I was left amazed and started playing and trying to
+            make games myself. After some years I developed Cookie Clicker and
+            Pou clones.
+        </Study>
+    </section>
+</Layout>

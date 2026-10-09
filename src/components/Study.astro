@@ -1,0 +1,47 @@
+---
+export type StudyType = "Project" | "Book" | "Course" | "Contest";
+
+interface Props {
+    title: string;
+    type: StudyType;
+    date: string;
+}
+
+const { title, type, date } = Astro.props;
+
+if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+    throw new Error("Date must be in the format YYYY-MM-DD");
+}
+
+const [year, month, day] = date.split("-").map(Number);
+const formattedDate = new Date(year, month - 1, day).toLocaleDateString(
+    "en-US",
+    {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+    },
+);
+
+const markerClass = {
+    Project: "bg-amber-700",
+    Book: "bg-indigo-700",
+    Course: "bg-emerald-700",
+    Contest: "bg-rose-700",
+}[type];
+---
+
+<div class="flex flex-col">
+    <p class="flex items-center gap-2 text-sm">
+        <span class="inline-flex items-center gap-1.5">
+            <span
+                class:list={["inline-block size-1.5 rounded-full", markerClass]}
+                aria-hidden="true"></span>
+            {type}
+        </span>
+        <span aria-hidden="true" class="h-px bg-border flex-1"></span>
+        <time datetime={date}>{formattedDate}</time>
+    </p>
+    <h3 class="font-medium text-title">{title}</h3>
+    <p><slot /></p>
+</div>
