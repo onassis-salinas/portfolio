@@ -48,10 +48,6 @@ const ui = {
     es: "Otros proyectos",
     en: "Other projects",
   },
-  description_churchpaq: {
-    es: "SaaS todo en uno para iglesias. Permite gestionar miembros, eventos, sitio web, finanzas e inventario. Facilita la administración entre varios usuarios desde una sola plataforma.",
-    en: "An all-in-one SaaS for churches. It manages members, events, website, finances and inventory. Supports collaborative administration in a unified platform.",
-  },
   description_capupet: {
     es: "SaaS todo en uno para negocios de grooming de mascotas. Permite gestionar clientes, mascotas, citas y más. Facilita la administración entre varios usuarios desde una sola plataforma.",
     en: "An all-in-one SaaS for pet grooming businesses. It manages clients, pets, appointments and more. Supports collaborative administration in a unified platform.",
