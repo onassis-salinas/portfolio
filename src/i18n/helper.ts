@@ -8,7 +8,7 @@ const ui = {
     en: "I develop quality software for various organizations.",
   },
 
-  projects: {
+  products: {
     es: "Productos",
     en: "Products",
   },
