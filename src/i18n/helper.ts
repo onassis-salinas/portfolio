@@ -64,6 +64,10 @@ const ui = {
     es: "Onassis Salinas",
     en: "Onassis Salinas",
   },
+  description_liminalraycast: {
+    es: "Juego 2.5D hecho en C y SDL3 que utiliza raycasting para el renderizado y lo aprovecha para generar espacios no euclidianos.",
+    en: "2.5D game made in C and SDL3 that uses raycasting for rendering and takes advantage of it to generate non-Euclidean spaces.",
+  }
 };
 
 export type Locale = keyof (typeof ui)[keyof typeof ui];

@@ -35,8 +35,13 @@ const { locale } = Astro.props;
 
     <div class="flex flex-col gap-8">
       <Project
+        title="Liminal Raycast"
+        href={`https://liminal-raycast.onassis.dev`}
+        text={t(locale, "description_liminalraycast")}
+      />
+      <Project
         title="Geometry Bullets"
-        href={`https://geometrybullets.onassis.dev/`}
+        href={`https://geometrybullets.onassis.dev`}
         text={t(locale, "description_geometrybullets")}
       />
     </div>
@@ -59,7 +64,7 @@ const { locale } = Astro.props;
       <div class="col-span-2">{t(locale, "locationText")}</div>
       <div class="font-medium text-title">Instagram:</div>
       <a
-        href="https://www.instagram.com/onassis_salinas/"
+        href="https://www.instagram.com/onassis_salinas"
         class="col-span-2 hover:underline">@onassis_salinas</a
       >
     </div>
