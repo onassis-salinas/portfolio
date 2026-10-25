@@ -1,0 +1,80 @@
+---
+interface Props {
+    frontmatter: {
+        title: string;
+        date: string;
+    };
+}
+
+const { frontmatter } = Astro.props as Props;
+
+import Header from "@/components/Header.astro";
+import "@/styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <title>{frontmatter.title}</title>
+    </head>
+    <body class="relative min-h-screen flex flex-col pb-24">
+        <Header locale="en" />
+        <main
+            class="writing max-w-[40rem] w-full mx-auto z-10 px-4 flex-1 mt-20"
+        >
+            <h1>{frontmatter.title}</h1>
+            <p class="!text-sm !mt-3 !mb-10">
+                Published:
+                {" "}
+                {
+                    new Date(frontmatter.date).toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                    })
+                }
+            </p>
+
+            <slot />
+        </main>
+    </body>
+</html>
+
+<style is:global>
+    .writing h2 {
+        @apply text-2xl font-medium mt-10 -mb-2 text-title;
+    }
+    .writing h3 {
+        @apply text-xl font-medium text-title;
+    }
+    .writing p {
+        @apply text-base my-5;
+    }
+    .writing a {
+        @apply underline text-title;
+    }
+    .writing ul {
+        @apply list-disc list-inside;
+    }
+    .writing ol {
+        @apply list-decimal list-inside;
+    }
+    .writing strong {
+        @apply font-medium text-title;
+    }
+    .writing em {
+        @apply italic;
+    }
+    .writing code {
+        @apply bg-neutral-800 text-foreground text-sm px-1 py-0.5 rounded-md;
+    }
+    .writing li::marker {
+        @apply text-title font-medium;
+    }
+    .writing pre {
+        @apply !bg-neutral-800 py-1.5 pl-1 pr-2 rounded-sm;
+    }
+</style>

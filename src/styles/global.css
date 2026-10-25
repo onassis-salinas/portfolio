@@ -25,13 +25,13 @@ html {
 }
 
 h1 {
-  @apply text-3xl text-title font-medium !leading-none;
+  @apply text-3xl text-title font-medium;
 }
 
 @layer base {
   :root {
     --background: 0 0% 4.5%;
-    --foreground: 0 0% 76%;
+    --foreground: 0 0% 80%;
     --title: 0 0% 96%;
     --border: 240 3.7% 20%;
     --radius: 0.5rem;

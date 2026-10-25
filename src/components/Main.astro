@@ -7,7 +7,7 @@ import Project from "./Project.astro";
 const { locale } = Astro.props;
 ---
 
-<Layout title={t(locale, "headTitle")} locale={locale}>
+<Layout title={t(locale, "headTitle")} locale={locale} main>
   <section class="mt-20">
     <h1>Onassis Salinas</h1>
     <p>{t(locale, "description")}</p>
@@ -31,7 +31,7 @@ const { locale } = Astro.props;
   </section>
 
   <section>
-    <H2 text={t(locale, "other_projects")} id="other_projects" count={1} />
+    <H2 text={t(locale, "other_projects")} id="other_projects" count={2} />
 
     <div class="flex flex-col gap-8">
       <Project
