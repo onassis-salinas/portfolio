@@ -44,9 +44,9 @@ const ui = {
     es: "Contacto",
     en: "Contact",
   },
-  other_projects: {
-    es: "Otros proyectos",
-    en: "Other projects",
+  games: {
+    es: "Juegos",
+    en: "Games",
   },
   description_capupet: {
     es: "SaaS todo en uno para negocios de grooming de mascotas. Permite gestionar clientes, mascotas, citas y más. Facilita la administración entre varios usuarios desde una sola plataforma.",

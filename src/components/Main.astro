@@ -31,7 +31,7 @@ const { locale } = Astro.props;
   </section>
 
   <section>
-    <H2 text={t(locale, "other_projects")} id="other_projects" count={2} />
+    <H2 text={t(locale, "games")} id="games" count={2} />
 
     <div class="flex flex-col gap-8">
       <Project
@@ -52,21 +52,25 @@ const { locale } = Astro.props;
 
     <div class="grid grid-cols-3 sm:grid-cols-6 gap-1">
       <div class="font-medium text-title">{t(locale, "email")}</div>
-      <a href="mailto:contact@onassis.dev" class="col-span-2 hover:underline"
-        >contact@onassis.dev</a
-      >
+      <a href="mailto:contact@onassis.dev" class="col-span-2 hover:underline">
+        contact@onassis.dev
+      </a>
       <div class="font-medium text-title">{t(locale, "github")}</div>
       <a
         href="https://github.com/onassis-salinas"
-        class="col-span-2 hover:underline">onassis-salinas</a
+        class="col-span-2 hover:underline"
       >
+        onassis-salinas
+      </a>
       <div class="font-medium text-title">{t(locale, "location")}</div>
       <div class="col-span-2">{t(locale, "locationText")}</div>
       <div class="font-medium text-title">Instagram:</div>
       <a
         href="https://www.instagram.com/onassis_salinas"
-        class="col-span-2 hover:underline">@onassis_salinas</a
+        class="col-span-2 hover:underline"
       >
+        @onassis_salinas
+      </a>
     </div>
   </section>
 </Layout>
